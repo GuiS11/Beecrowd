@@ -1,0 +1,47 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int n, i=0;
+    int x,y,soma=0;
+    scanf("%d", &n);
+    
+    for(i=0;i<n;i++){
+    scanf("%d %d", &x,&y);
+    if(x-y==0){
+        printf("0\n");
+    }
+    else if(x<y){
+          if(x%2!=0){
+          for(x= x + 2;x<y;x= x + 2){
+          soma = soma + x;  
+}
+}
+    else if(x%2==0){
+        for(x + 1;x<y;x = x+2){
+            soma = soma +x;
+        }
+    }
+}
+        
+    else if (x>y){
+           if(y%2!=0){
+               for(y= y + 2; y<x;y= y +2){
+                   soma = soma + y;
+               }
+           }
+          else if(y%2==0){
+              for(y + 1; y<x; y= y + 2){
+                  soma = soma + y;
+              }
+          }
+        }
+   printf("%d\n", soma);
+   
+   
+    }
+    
+        
+    
+    return 0;
+}
