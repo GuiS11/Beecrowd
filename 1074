@@ -19,7 +19,7 @@ int main() {
             else if((num%2==0 && num%(-2)==0) && num>0 ){
                 printf("EVEN POSITIVE\n");
             }
-            else if((num%2!=0 && num%(-2)!=0) && num<0 ){
+            else if((num%2!=0 && num%(-2)!=0) && num>0 ){
                 printf("ODD POSITIVE\n");
             }
             else{
