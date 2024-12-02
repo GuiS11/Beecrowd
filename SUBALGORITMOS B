@@ -1,0 +1,33 @@
+#include<stdio.h>
+
+float peso(float height, char sex){
+float ideal;
+if(sex=='M'){
+
+ideal = 23*height*height;
+}
+ else if(sex =='F'){
+    ideal = 20*height*height;
+}
+
+return ideal;
+}
+
+int main(){
+
+int n,i;
+float height, z;
+char sex;
+printf("Quantidade de pessoas: \n");
+scanf("%d", &n);
+for(i=1;i<=n;i++){
+    printf("Digite sua altura e sexo: \n");
+    scanf("%f %c", &height,&sex );
+    z = peso(height,sex);
+    printf("Peso ideal: %.2f\n", z);
+    z = 0;
+}
+
+
+return 0;
+}
