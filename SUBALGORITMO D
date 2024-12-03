@@ -1,0 +1,37 @@
+#include <stdio.h>
+float x0=0;
+float z0=0;
+
+void LePonto(){
+    printf("Digite as coordenadas do ponto: \n");
+    scanf("%f %f", &x0,&z0);
+}
+
+
+
+
+
+
+
+
+int main()
+{
+  float x1,y1, coef;
+  LePonto();
+  printf("Digite os outros pontos: \n");
+  scanf("%f %f", &x1,&y1);
+  if(x1==x0){
+      ("nao eh possivel determinar o coeficiente angular.\n");
+  }
+  else{
+     coef = (y1 - z0)/(x1 - x0); 
+   printf("%.2f\n", coef);
+ 
+  }
+  
+  
+  
+  
+  
+  return 0;
+}
