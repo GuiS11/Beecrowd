@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int pot(int x, int y){
+    int valor, i;
+    valor = x*x;
+    for(i=2;i<y;i++){
+       valor = valor*x; 
+    }
+   return valor;
+}
+
+
+
+
+
+
+int main()
+{
+    int x,y;
+    printf("Digite a base e o expoente: \n");
+    
+    scanf("%d %d", &x,&y);
+    if(y<0){
+        printf("Ainda não trabalhamos com números negativos\n");
+    }
+    else if(y==0 && x!=0){
+        printf("O resultado é 1\n");
+    }
+    else if(y==1){
+        printf("O resultado é %d\n", x);
+    }
+    
+    else{
+    printf("O resultado é %d\n", pot(x,y));
+    
+}
+return 0;
+}
